@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Penguin Fashion</title>
+    <!-- Tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="">
+    <navbar class="flex justify-between my-6 bg-[#fff7ed] py-2">
+        <div>
+            <img class="w-64 ml-4" src="./images/logo.png" alt="">
+        </div>
+        <div class="flex justify-between gap-x-8 text-xl font-semibold mr-4">
+            <nav>Home</nav>
+            <nav>Product</nav>
+            <nav>About Us</nav>
+            <nav>Contact Us</nav>
+        </div>
+    </navbar>
 </body>
+
 </html>
